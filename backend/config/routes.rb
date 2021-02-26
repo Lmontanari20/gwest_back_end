@@ -3,4 +3,11 @@ Rails.application.routes.draw do
   post '/signup', to: 'user#create'
   post '/login', to: 'auth#create'
   get '/persist', to: 'auth#show'
+
+  get '/battle/:id', to: 'battle#index'
+  patch '/battle/:id', to: 'battle#update'
+  post '/battle/new/:id', to: 'battle#create'
+  
+  get '/card/:id', to: 'card#index'
+  patch '/card/:user_id/:card_id', to: 'card#update'
 end

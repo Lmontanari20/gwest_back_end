@@ -27,8 +27,9 @@ ActiveRecord::Schema.define(version: 2021_02_24_224506) do
   create_table "cards", force: :cascade do |t|
     t.string "name"
     t.integer "attack"
-    t.string "class"
+    t.string "cardClass"
     t.string "special"
+    t.boolean "indeck", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
