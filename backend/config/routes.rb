@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   patch '/battle/:id', to: 'battle#update'
   post '/battle/new/:id', to: 'battle#create'
   
-  get '/card/:id', to: 'card#index'
-  patch '/card/:user_id/:card_id', to: 'card#update'
+  get '/card/:id', to: 'user_card#index'
+  patch '/card/:user_id/:card_id', to: 'user_card#update'
+
+
 end

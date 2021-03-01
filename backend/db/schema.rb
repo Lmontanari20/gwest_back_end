@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2021_02_24_224506) do
     t.integer "attack"
     t.string "cardClass"
     t.string "special"
-    t.boolean "indeck", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -37,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_224506) do
   create_table "user_cards", force: :cascade do |t|
     t.integer "user_id"
     t.integer "card_id"
+    t.boolean "indeck", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["card_id"], name: "index_user_cards_on_card_id"
