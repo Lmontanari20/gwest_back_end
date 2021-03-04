@@ -1,7 +1,6 @@
 require 'faker'
 
 class BattleController < ApplicationController 
-    skip_before_action :authorized
     def create 
         name = Faker::FunnyName.two_word_name
         battle = Battle.create(ai_name: name, win: false, round1: nil, round2: nil, round3: nil, user_id: params[:id])

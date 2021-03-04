@@ -1,5 +1,4 @@
 class UserCardController < ApplicationController
-    skip_before_action :authorized
     def index
         user = User.find(params[:id])
         render json: user.user_cards

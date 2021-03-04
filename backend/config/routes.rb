@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/persist', to: 'auth#show'
 
   get '/battle/:id', to: 'battle#index'
-  patch '/battle/:user_id', to: 'battle#update'
+  patch '/battle/:battle_id', to: 'battle#update'
   get '/battle/new/:id', to: 'battle#create'
   
   get '/card/:id', to: 'user_card#index'

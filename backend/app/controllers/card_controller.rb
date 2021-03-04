@@ -1,5 +1,4 @@
 class CardController < ApplicationController 
-    skip_before_action :authorized
     
     def aiDeck 
         cards = []
