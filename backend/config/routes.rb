@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get '/card/:id', to: 'user_card#index'
   patch '/card/:user_id/:card_id', to: 'user_card#update'
   get '/card/ai/deck', to: 'card#aiDeck'
-
+  post '/card/:id', to: 'user_card#create'
 end
