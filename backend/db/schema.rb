@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_224506) do
     t.integer "attack"
     t.string "cardClass"
     t.string "special"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -5,6 +5,7 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.integer :attack
       t.string :cardClass
       t.string :special
+      t.string :url
       
       t.timestamps
     end
